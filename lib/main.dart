@@ -6,6 +6,7 @@ import 'package:shop_store/screens/cart_screen.dart';
 import 'package:shop_store/screens/categories_screen.dart';
 import 'package:shop_store/screens/product_details_screen.dart';
 import 'package:shop_store/screens/profile_screen.dart';
+import 'package:shop_store/screens/notifications_screen.dart';
 import 'providers/cart_provider.dart';
 import 'providers/product_provider.dart';
 import 'screens/home_screen.dart';
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
               '/categories': (context) => const CategoriesScreen(),
               '/cart': (context) => const CartScreen(),
               '/profile': (context) => const ProfileScreen(),
+              '/notifications': (context) => const NotificationsScreen(),
               '/product-details': (context) => ProductDetailsScreen(
                 product: ModalRoute.of(context)!.settings.arguments as Product,
               ),

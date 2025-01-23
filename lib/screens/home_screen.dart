@@ -84,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   icon: const Icon(Icons.notifications_outlined),
                   color: Theme.of(context).colorScheme.primary,
                   onPressed: () {
-                    // TODO: Navigate to notifications
+                    Navigator.pushNamed(context, '/notifications');
                   },
                 ),
               ],
